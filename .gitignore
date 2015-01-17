@@ -1,0 +1,4 @@
+*.pyc
+*.csv
+*.pdf
+!improved-dataset/turnstile_weather_v2.csv
