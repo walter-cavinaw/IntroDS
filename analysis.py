@@ -2,6 +2,7 @@ import numpy as np
 import pandas
 import statsmodels.api as sm
 import datetime
+import ggplot
 
 """
 Here is the analysis for the New York Subway Data with relation to weather.
@@ -29,9 +30,10 @@ def predictions(weather_turnstile):
 
 
 def predict(data):
-    X = data[['rain', 'hour', 'day_week']]
+    X = data[['rain', 'hour', 'day_week', 'weekday', 'wspdi', 'meanwspdi', 'fog', 'meantempi',  'tempi', 'precipi', 'meanprecipi', 'meanpressurei', 'pressurei']]
     dummy_units = pandas.get_dummies(data['UNIT'], prefix='unit')
-    X = X.join(dummy_units)
+    dummy_cond = pandas.get_dummies(data['conds'], prefix='conditions')
+    X = X.join([dummy_units, dummy_cond])
     X = sm.add_constant(X)
 
     y = data['ENTRIESn_hourly']
@@ -41,10 +43,16 @@ def predict(data):
 
     print est.summary()
 
+
+def plot_histogram(data):
+    plot = None #ggplot(data, aes(x='something, y='something')
+
+
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
-    predict(df)
+    # predict(df)
+    plot_histogram(df)
     print "done"
 
 if __name__ == "__main__":
