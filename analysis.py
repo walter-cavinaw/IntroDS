@@ -29,11 +29,22 @@ def predictions(weather_turnstile):
 
 
 def predict(data):
-    X = data[['rain']]
+    X = data[['rain', 'hour', 'day_week']]
+    dummy_units = pandas.get_dummies(data['UNIT'], prefix='unit')
+    X = X.join(dummy_units)
+    X = sm.add_constant(X)
+
+    y = data['ENTRIESn_hourly']
+
+    est = sm.OLS(y, X)
+    est = est.fit()
+
+    print est.summary()
 
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
+    predict(df)
     print "done"
 
 if __name__ == "__main__":
