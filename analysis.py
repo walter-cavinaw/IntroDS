@@ -1,8 +1,7 @@
-import numpy as np
 import pandas
 import statsmodels.api as sm
-import datetime
-import ggplot
+import scipy
+from ggplot import ggplot, geom_histogram, aes, xlab, ylab, ggtitle
 
 """
 Here is the analysis for the New York Subway Data with relation to weather.
@@ -45,14 +44,36 @@ def predict(data):
 
 
 def plot_histogram(data):
-    plot = None #ggplot(data, aes(x='something, y='something')
+    plot = ggplot(data, aes(x='ENTRIESn_hourly', colour='factor(rain)', fill='factor(rain)')) + geom_histogram(binwidth=50) \
+        + xlab('Entries per Hour') + ylab('Frequency') + ggtitle('Histogram of Subway Entries on Rainy vs Non-Rainy Days')
+    print plot
+
+
+def statistics(data):
+    rain_df = data['ENTRIESn_hourly'][data['rain'] == 1]
+    no_rain_df = data['ENTRIESn_hourly'][data['rain'] == 0]
+
+    wr, pr = scipy.stats.shapiro(rain_df)
+    wn, pn = scipy.stats.shapiro(no_rain_df)
+
+    print len(rain_df.index)
+    print len(no_rain_df.index)
+
+    print "probability rain data is normal: " + str(pr) + ", " + str(wr)
+    print "probability no-rain data is normal: " + str(pn) + ", " + str(wn)
+
+    u, p = scipy.stats.mannwhitneyu(rain_df, no_rain_df)
+
+    print "The probability that the ridership on rainy days is less than or equal to the ridership on non-rainy days, \
+    given the data: " + str(p) + str(u)
 
 
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
     # predict(df)
-    plot_histogram(df)
+    # plot_histogram(df)
+    statistics(df)
     print "done"
 
 if __name__ == "__main__":

@@ -1,1 +1,15 @@
 A list of the sources consulted during the project.
+
+Should we always choose a nonparametric test when comparing two apparently nonnormal distributions?
+http://www.ncbi.nlm.nih.gov/pubmed/11165471
+J Clin Epidemiol. 2001 Jan;54(1):86-92.
+Skovlund E1, Fenstad GU.
+
+Wikipedia: Mann-Whitney U test
+http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test
+
+Wikipedia: Shapiro Wilks test
+http://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test
+
+SciPy.org, scipy.stats.shapiro
+http://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.shapiro.html
