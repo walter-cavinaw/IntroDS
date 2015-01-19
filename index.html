@@ -9,6 +9,39 @@
   <h1>
       Intro to Data Science Project
   </h1>
+  <h2>
+      Statistical Test
+  </h2>
+  <div>
+      <h3>
+          1.1
+      </h3>
+      <p>
+          The statistical test used to analyse the New York City Subway Data was the Mann Whitney U test.
+          The null hypothesis is that the ridership of the subway on rainy and non rainy days is equivalent.
+          I used a one tailed P value with a significance (p-critical value) of 5%, to determine if the ridership on rainy days was
+          significantly higher than on days with no rain.
+      </p>
+      <h3>
+          1.2
+      </h3>
+      <p>
+          This test is applicable because the underlying distributions are not normal (therefore making the test more effective than
+          a t-test) and have different sample sizes, variances. The Mann Whitney U test does not make any assumptions regarding
+          the distribution, sample size and variance.
+      </p>
+      <h3>
+          1.3
+      </h3>
+      <p>
+          The p-value returned from the test (using a normal approximation of the U statistic for large sample sizes) is 0.0000027
+          which is below the significance level of 0.05. The mean ridership on rainy days is 2028 and 1846 for non rainy days.
+      </p>
+      <p>
+          The statistical test indicated that it was significantly unlikely that the ridership on rainy days is equivalent to the ridership
+          on non rainy days. It leads us to believe that ridership is higher on days with rain.
+      </p>
+  </div>
   <div class="chart">
   </div>
 <script src="http://d3js.org/d3.v3.min.js"></script>
