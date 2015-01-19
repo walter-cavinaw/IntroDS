@@ -13,3 +13,6 @@ http://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test
 
 SciPy.org, scipy.stats.shapiro
 http://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.shapiro.html
+
+formula for mann whitney u test when n>20
+https://epilab.ich.ucl.ac.uk/coursematerial/statistics/non_parametric/wilcox_mann_whitney.html

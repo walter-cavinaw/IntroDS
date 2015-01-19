@@ -2,6 +2,7 @@ import pandas
 import statsmodels.api as sm
 import scipy
 from ggplot import ggplot, geom_histogram, aes, xlab, ylab, ggtitle
+import numpy
 
 """
 Here is the analysis for the New York Subway Data with relation to weather.
@@ -56,16 +57,22 @@ def statistics(data):
     wr, pr = scipy.stats.shapiro(rain_df)
     wn, pn = scipy.stats.shapiro(no_rain_df)
 
-    print len(rain_df.index)
-    print len(no_rain_df.index)
-
     print "probability rain data is normal: " + str(pr) + ", " + str(wr)
     print "probability no-rain data is normal: " + str(pn) + ", " + str(wn)
 
     u, p = scipy.stats.mannwhitneyu(rain_df, no_rain_df)
 
-    print "The probability that the ridership on rainy days is less than or equal to the ridership on non-rainy days, \
-    given the data: " + str(p) + str(u)
+    n1 = len(rain_df.index)
+    n2 = len(no_rain_df.index)
+
+    z = (u - (n1*n2/2))/(n1*n2*(n1+n2+1)/12)**0.5
+
+    p = scipy.stats.norm.cdf(z)
+    mean_rain = numpy.mean(rain_df)
+    mean_no_rain = numpy.mean(no_rain_df)
+
+    print "The probability that rain is equal to non-rain " + str(p)
+    print "The mean of rain: " + str(mean_rain) + "\nThe mean of no-rain: " + str(mean_no_rain)
 
 
 def main():
