@@ -83,8 +83,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7379576" vertical-offset="790" max-vertical-offset="1309">
-              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.5240848" vertical-offset="102" max-vertical-offset="1258">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -476,7 +476,11 @@
       <created>1422829794147</created>
       <updated>1422829794147</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed padding">
+      <created>1422829842091</created>
+      <updated>1422829842091</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -549,7 +553,8 @@
     <MESSAGE value="adding histogram plots" />
     <MESSAGE value="added text answers to questions" />
     <MESSAGE value="modified css" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified css" />
+    <MESSAGE value="fixed padding" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed padding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -719,8 +724,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7379576" vertical-offset="790" max-vertical-offset="1309">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.5240848" vertical-offset="102" max-vertical-offset="1258">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding />
         </state>
       </provider>
