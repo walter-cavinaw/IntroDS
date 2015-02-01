@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a16c46eb-131b-4966-85ba-989cbb46d031" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IntroDS.iws" />
@@ -80,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="102" max-vertical-offset="1258">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.433526" vertical-offset="251" max-vertical-offset="1258">
+              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -100,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylesheet.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46037737" vertical-offset="7610" max-vertical-offset="14450">
+            <state vertical-scroll-proportion="78.71429" vertical-offset="10058" max-vertical-offset="14450">
               <caret line="462" column="22" selection-start-line="462" selection-start-column="22" selection-end-line="462" selection-end-column="22" />
               <folding />
             </state>
@@ -134,8 +134,8 @@
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/sources.txt" />
         <option value="$PROJECT_DIR$/analysis.py" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/stylesheets/stylesheet.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -484,7 +484,11 @@
       <created>1422829948283</created>
       <updated>1422829948283</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed header">
+      <created>1422830141987</created>
+      <updated>1422830141987</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -559,7 +563,8 @@
     <MESSAGE value="modified css" />
     <MESSAGE value="fixed padding" />
     <MESSAGE value="fixed headers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed headers" />
+    <MESSAGE value="fixed header" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -719,18 +724,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="102" max-vertical-offset="1258">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state vertical-scroll-proportion="78.71429" vertical-offset="10058" max-vertical-offset="14450">
+          <caret line="462" column="22" selection-start-line="462" selection-start-column="22" selection-end-line="462" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46037737" vertical-offset="7610" max-vertical-offset="14450">
-          <caret line="462" column="22" selection-start-line="462" selection-start-column="22" selection-end-line="462" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.433526" vertical-offset="251" max-vertical-offset="1258">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding />
         </state>
       </provider>
