@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a16c46eb-131b-4966-85ba-989cbb46d031" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IntroDS.iws" />
@@ -84,8 +83,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70520234" vertical-offset="773" max-vertical-offset="1309">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7379576" vertical-offset="790" max-vertical-offset="1309">
+              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -473,7 +472,11 @@
       <created>1422829205792</created>
       <updated>1422829205792</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modified css">
+      <created>1422829794147</created>
+      <updated>1422829794147</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -545,7 +548,8 @@
     <MESSAGE value="added source list; working on regression" />
     <MESSAGE value="adding histogram plots" />
     <MESSAGE value="added text answers to questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added text answers to questions" />
+    <MESSAGE value="modified css" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -715,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70520234" vertical-offset="773" max-vertical-offset="1309">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7379576" vertical-offset="790" max-vertical-offset="1309">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
           <folding />
         </state>
       </provider>
