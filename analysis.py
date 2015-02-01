@@ -26,8 +26,6 @@ def predictions(weather_turnstile):
     est = est.fit()
     return est.predict(X)
 
-# TODO: implement predictions for new turnstile_weather_v2 and get coefficient, including R^2
-
 
 def predict(data):
     X = data[['rain', 'hour', 'day_week', 'weekday', 'wspdi', 'meanwspdi', 'fog', 'meantempi',  'tempi', 'precipi', 'meanprecipi', 'meanpressurei', 'pressurei']]
@@ -78,9 +76,9 @@ def statistics(data):
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
-    # predict(df)
+    predict(df)
     # plot_histogram(df)
-    statistics(df)
+    #statistics(df)
     print "done"
 
 if __name__ == "__main__":
