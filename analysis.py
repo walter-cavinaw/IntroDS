@@ -76,8 +76,8 @@ def statistics(data):
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
-    predict(df)
-    # plot_histogram(df)
+    #predict(df)
+    plot_histogram(df)
     #statistics(df)
     print "done"
 
