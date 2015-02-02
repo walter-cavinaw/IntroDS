@@ -86,8 +86,9 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.57418114" vertical-offset="2915" max-vertical-offset="3519">
-              <caret line="189" column="20" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
+              <caret line="189" column="91" selection-start-line="189" selection-start-column="91" selection-end-line="189" selection-end-column="91" />
               <folding>
+                <element signature="n#style#0;n#img#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#1;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -545,7 +546,11 @@
       <created>1422842032493</created>
       <updated>1422842032494</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix image link">
+      <created>1422842139319</created>
+      <updated>1422842139319</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -625,7 +630,8 @@
     <MESSAGE value="linear regression answers." />
     <MESSAGE value="visualization histogram." />
     <MESSAGE value="add histogram image" />
-    <option name="LAST_COMMIT_MESSAGE" value="add histogram image" />
+    <MESSAGE value="fix image link" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix image link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -678,6 +684,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="986">
           <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
+            <element signature="n#style#0;n#img#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#1;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -731,6 +738,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
           <folding>
+            <element signature="n#style#0;n#img#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#1;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -814,8 +822,9 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57418114" vertical-offset="2915" max-vertical-offset="3519">
-          <caret line="189" column="20" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
+          <caret line="189" column="91" selection-start-line="189" selection-start-column="91" selection-end-line="189" selection-end-column="91" />
           <folding>
+            <element signature="n#style#0;n#img#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#1;n#p#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
