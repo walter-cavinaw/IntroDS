@@ -76,7 +76,7 @@
           2.2
       </h3>
       <p>
-          I used the advanced dataset; the features I used in my model are rain, hour, day_week, weekday, wspdi,
+          The features that I chose from the advanced dataset are rain, hour, day_week, weekday, wspdi,
           meanwspdi, fog, meantempi,  tempi, precipi, meanprecipi, meanpressurei, pressurei.
       </p>
       <p>
@@ -89,9 +89,96 @@
           I tried to include any variable that has an affect on the environment or determines a location in space/time.
           <ul>
             <li>
-
+                turnstile unit (dummy variable): This feature is the single best variable for determining ridership.
+                Naturally the location of a subway station should be a great indicator for how many people will use it. By using this variable the
+                location of the station is implied by the turnstile units.
+            </li>
+            <li>
+                weather condition (dummy variable): The weather condiditons are another factor that would contribute to a person's decision
+                to use public transportation as apposed to walking or biking.
+            </li>
+            <li>
+                Hour: This would also intuitively determine ridership. Any one who has taken public transit
+                or drives tries to avoid the times of the day when many people have just finished work.
+            </li>
+            <li>
+                Day of week: There would be an expectation that weekdays and weekends would have a significant effect on ridership.
+                Then there are other days of the week when people may be more likely to drive such as Fridays.
+            </li>
+            <li>
+                rain, fog, meanprecipi & precipi: I included these variables because they I believe that people are less likely to drive/walk/bike when it is raining.
+                It can be unpleasant to be outdoors in this weather and can impair driving too.
+            </li>
+            <li>
+                meantempi & tempi: Similar to the above I believe that people are more likely to walk and bike on warm days. These variables can account for that.
+            </li>
+            <li>
+                meanwspdi, wspdi, meanpressurei & pressurei: These variables where included because they were able to increase the fit
+                of the line and do not decrease the integrity of the model. The variables represent environmental factors which affect
+                human behaviour.
             </li>
           </ul>
+      </p>
+      <h3>
+          2.4
+      </h3>
+      <p>
+          The coefficients for the non-dummy variables are as follows:
+          <ul>
+            <li>
+                rain: -158.8137
+            </li>
+      <li>
+          Hour: 105.2325
+      </li>
+      <li>
+          Day of Week (day_week): 59.9848
+      </li>
+      <li>
+          Weekday: 1183.9488
+      </li>
+      <li>
+          Wind speed (wspdi): 12.3732
+      </li>
+      <li>
+          Mean wind speed (meanwspdi): -23.9291
+      </li>
+      <li>
+          Fog: -116.6487
+      </li>
+      <li>
+          Mean temperature (meantempi): -64.9564
+      </li>
+      <li>
+          temperature (tempi): 45.9731
+      </li>
+      <li>
+          preicpitation (precipi): -2852.1931
+      </li>
+      <li>
+          Mean precipitation (meanprecipi): 8659.9360
+      </li>
+      <li>
+          Mean pressure (meanpressurei): -366.5096
+      </li>
+      <li>
+          Pressure (pressurei): -264.2768
+      </li>
+          </ul>
+      </p>
+      <h3>
+          2.5
+      </h3>
+      <p>
+          My model returned an R-squared value of 0.493.
+      </p>
+      <h3>
+          2.6
+      </h3>
+      <p>
+          For social and behavioural data, an R-squared over 0.4 can be considered significant.
+          Given that the dataset falls into this category, an R-squared of .493 would make the ordinary-least-squares method
+          appropriate for this data set.
       </p>
   </div>
 </div>
