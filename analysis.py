@@ -1,7 +1,7 @@
 import pandas
 import statsmodels.api as sm
 import scipy
-from ggplot import ggplot, geom_histogram, aes, xlab, ylab, ggtitle
+from ggplot import ggplot, geom_histogram, aes, xlab, ylab, ggtitle, geom_bar
 import numpy
 
 """
@@ -73,12 +73,18 @@ def statistics(data):
     print "The mean of rain: " + str(mean_rain) + "\nThe mean of no-rain: " + str(mean_no_rain)
 
 
+def plot_by_day(data):
+    plot3 = ggplot(data, aes(x='day_week')) + geom_bar(aes(weight='ENTRIESn_hourly'))
+    print plot3
+
+
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
     #predict(df)
-    plot_histogram(df)
+    #plot_histogram(df)
     #statistics(df)
+    plot_by_day(df)
     print "done"
 
 if __name__ == "__main__":
