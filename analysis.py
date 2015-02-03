@@ -1,7 +1,7 @@
 import pandas
 import statsmodels.api as sm
 import scipy
-from ggplot import ggplot, geom_histogram, aes, xlab, ylab, ggtitle, geom_bar
+from ggplot import ggplot, geom_histogram, aes, xlab, ylab, ggtitle, geom_bar, scale_x_continuous
 import numpy
 
 """
@@ -74,8 +74,22 @@ def statistics(data):
 
 
 def plot_by_day(data):
-    plot3 = ggplot(data, aes(x='day_week')) + geom_bar(aes(weight='ENTRIESn_hourly'))
+    dow_group = data.groupby('day_week').mean()['ENTRIESn_hourly']
+    d = {'day_week': dow_group.index, 'ENTRIESn_hourly': dow_group.values}
+    data = pandas.DataFrame(d)
+    plot3 = ggplot(data, aes(x='day_week', y='ENTRIESn_hourly', width="0.8")) + \
+            geom_bar(stat="bar") \
+            + scale_x_continuous(name="Days of the Week",
+                                 labels=["","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                                 limits=(-0.6, 6.6)) + ggtitle("Hourly Turnstile Entries By Day") \
+            + ylab("Average Hourly Entries")
     print plot3
+
+
+def plottest():
+    df = pandas.DataFrame({"x":[1,2,3,4], "y":[1,3,4,2]})
+    plot = ggplot(aes(x="x", y="y"), df) + geom_bar(aes(x="x"), stat="bar")
+    print plot
 
 
 def main():
@@ -85,6 +99,7 @@ def main():
     #plot_histogram(df)
     #statistics(df)
     plot_by_day(df)
+    #plottest()
     print "done"
 
 if __name__ == "__main__":

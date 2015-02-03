@@ -21,3 +21,5 @@ ggplot
 http://forums.udacity.com/questions/100155698/anyone-having-any-real-luck-with-geom_bar-in-ggplot
 
 http://ggplot.yhathq.com/
+
+http://blog.yhathq.com/posts/ggplot-for-python.html
