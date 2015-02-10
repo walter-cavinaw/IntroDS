@@ -85,8 +85,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08203125" vertical-offset="4025" max-vertical-offset="4505">
-              <caret line="238" column="111" selection-start-line="238" selection-start-column="111" selection-end-line="238" selection-end-column="111" />
+            <state vertical-scroll-proportion="0.40625" vertical-offset="3942" max-vertical-offset="4505">
+              <caret line="238" column="50" selection-start-line="238" selection-start-column="50" selection-end-line="238" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#h3#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -640,7 +640,11 @@
       <created>1423546947240</created>
       <updated>1423546947240</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="spelling">
+      <created>1423553138280</created>
+      <updated>1423553138280</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1162,8 +1166,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08203125" vertical-offset="4025" max-vertical-offset="4505">
-          <caret line="238" column="111" selection-start-line="238" selection-start-column="111" selection-end-line="238" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.40625" vertical-offset="3942" max-vertical-offset="4505">
+          <caret line="238" column="50" selection-start-line="238" selection-start-column="50" selection-end-line="238" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#h3#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
