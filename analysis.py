@@ -48,16 +48,16 @@ def plot_histogram(data):
 
 
 def statistics(data):
-    rain_df = data['ENTRIESn_hourly'][data['rain'] == 1]
-    no_rain_df = data['ENTRIESn_hourly'][data['rain'] == 0]
+    rain_df = data[['ENTRIESn_hourly']][data['rain'] == 1]
+    no_rain_df = data[['ENTRIESn_hourly']][data['rain'] == 0]
 
-    wr, pr = scipy.stats.shapiro(rain_df)
-    wn, pn = scipy.stats.shapiro(no_rain_df)
+    wr, pr = scipy.stats.shapiro(rain_df['ENTRIESn_hourly'])
+    wn, pn = scipy.stats.shapiro(no_rain_df['ENTRIESn_hourly'])
     #check ranksum
     print "probability rain data is normal: " + str(pr) + ", " + str(wr)
     print "probability no-rain data is normal: " + str(pn) + ", " + str(wn)
 
-    u, p = scipy.stats.mannwhitneyu(rain_df, no_rain_df)
+    u, p = scipy.stats.mannwhitneyu(rain_df['ENTRIESn_hourly'], no_rain_df['ENTRIESn_hourly'])
 
     n1 = len(rain_df.index)
     n2 = len(no_rain_df.index)
@@ -65,10 +65,14 @@ def statistics(data):
     z = (u - (n1*n2/2))/(n1*n2*(n1+n2+1)/12)**0.5
 
     p = scipy.stats.norm.cdf(z)
-    mean_rain = numpy.mean(rain_df)
-    median_rain = numpy.median(rain_df)
-    mean_no_rain = numpy.mean(no_rain_df)
-    median_no_rain = numpy.median(no_rain_df)
+    mean_rain = numpy.mean(rain_df['ENTRIESn_hourly'])
+    median_rain = numpy.median(rain_df['ENTRIESn_hourly'])
+    mean_no_rain = numpy.mean(no_rain_df['ENTRIESn_hourly'])
+    median_no_rain = numpy.median(no_rain_df['ENTRIESn_hourly'])
+    print "rainy day data"
+    print rain_df['ENTRIESn_hourly'].describe()
+    print "\nnon-rainy data"
+    print no_rain_df['ENTRIESn_hourly'].describe()
 
     print "The probability that rain is equal to non-rain " + str(p)
     print "The mean of rain: " + str(mean_rain) + "\nThe median of rain: " + str(median_rain) \
@@ -97,10 +101,10 @@ def plottest():
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
-    predictions(df)
+    #predictions(df)
     #predict(df)
     #plot_histogram(df)
-    #statistics(df)
+    statistics(df)
     #plot_by_day(df)
     #plottest()
     print "done"
