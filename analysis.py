@@ -14,17 +14,16 @@ This also includes the prediction mechanism I used for Problem Set 3, Question 8
 
 def predictions(weather_turnstile):
     """Predictions for Problem Set 3, Question 8"""
-    # weather_turnstile['week_day'] = \
-    # weather_turnstile['DATEn'].map(lambda x: datetime.datetime.strptime(x,'%Y-%m-%d').day)
-    X = weather_turnstile[['rain', 'Hour', 'meantempi', 'maxtempi', 'meanpressurei']]
-    y = weather_turnstile['ENTRIESn_hourly']
+    X = weather_turnstile[['rain', 'hour', 'meantempi']]
     dummy_units = pandas.get_dummies(weather_turnstile['UNIT'], prefix='unit')
-    X = X.join(dummy_units)
+    X = X.join([dummy_units])
     X = sm.add_constant(X)
+
+    y = weather_turnstile['ENTRIESn_hourly']
 
     est = sm.OLS(y, X)
     est = est.fit()
-    return est.predict(X)
+    print est.summary()
 
 
 def predict(data):
@@ -54,7 +53,7 @@ def statistics(data):
 
     wr, pr = scipy.stats.shapiro(rain_df)
     wn, pn = scipy.stats.shapiro(no_rain_df)
-
+    #check ranksum
     print "probability rain data is normal: " + str(pr) + ", " + str(wr)
     print "probability no-rain data is normal: " + str(pn) + ", " + str(wn)
 
@@ -67,10 +66,13 @@ def statistics(data):
 
     p = scipy.stats.norm.cdf(z)
     mean_rain = numpy.mean(rain_df)
+    median_rain = numpy.median(rain_df)
     mean_no_rain = numpy.mean(no_rain_df)
+    median_no_rain = numpy.median(no_rain_df)
 
     print "The probability that rain is equal to non-rain " + str(p)
-    print "The mean of rain: " + str(mean_rain) + "\nThe mean of no-rain: " + str(mean_no_rain)
+    print "The mean of rain: " + str(mean_rain) + "\nThe median of rain: " + str(median_rain) \
+    + "\nThe mean of no-rain: " + str(mean_no_rain) + "\nThe median of no rain: " + str(median_no_rain)
 
 
 def plot_by_day(data):
@@ -95,10 +97,11 @@ def plottest():
 def main():
     print "start"
     df = pandas.read_csv("improved-dataset/turnstile_weather_v2.csv")
+    predictions(df)
     #predict(df)
     #plot_histogram(df)
     #statistics(df)
-    plot_by_day(df)
+    #plot_by_day(df)
     #plottest()
     print "done"
 

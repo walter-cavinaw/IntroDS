@@ -23,3 +23,5 @@ http://forums.udacity.com/questions/100155698/anyone-having-any-real-luck-with-g
 http://ggplot.yhathq.com/
 
 http://blog.yhathq.com/posts/ggplot-for-python.html
+
+http://wikiofscience.wikidot.com/technology1:mann-whitney-u-test
