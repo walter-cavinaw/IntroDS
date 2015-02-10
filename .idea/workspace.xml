@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a16c46eb-131b-4966-85ba-989cbb46d031" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analysis.py" afterPath="$PROJECT_DIR$/analysis.py" />
+    <list default="true" id="a16c46eb-131b-4966-85ba-989cbb46d031" name="Default" comment="spelling">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -86,8 +85,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.556" vertical-offset="830" max-vertical-offset="4522">
-              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.68" vertical-offset="918" max-vertical-offset="4522">
+              <caret line="64" column="147" selection-start-line="64" selection-start-column="147" selection-end-line="64" selection-end-column="147" />
               <folding />
             </state>
           </provider>
@@ -611,7 +610,11 @@
       <created>1423543141327</created>
       <updated>1423543141327</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="spelling">
+      <created>1423544485259</created>
+      <updated>1423544485259</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1121,8 +1124,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.556" vertical-offset="830" max-vertical-offset="4522">
-          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.68" vertical-offset="918" max-vertical-offset="4522">
+          <caret line="64" column="147" selection-start-line="64" selection-start-column="147" selection-end-line="64" selection-end-column="147" />
           <folding />
         </state>
       </provider>
