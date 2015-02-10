@@ -219,12 +219,10 @@
           4.2
       </h3>
         <p>
-          There are several factors that contribute to the above stated conclusion. Before starting the analyses I believed that this would be the case,
-          and with a higher median and mean for ridership on rainy days
-          I could hypothesize that ridership on rainy days is higher than ridership on non-rainy days.
-          First we can consider the results of the non parametric significance test -- the mann-whitney u test.
-          We showed here that the data from rainy days and non-rainy days did not come from the same population. This along with the higher median,
-          and mean suggest that rainy day ridership is higher.
+          Before starting the analyses I believed that rainy day ridership would be significantly higher, so I set the null hypothesis accordingly:
+          rainy day ridership would not be larger than non-rainy day ridership. To disprove, we can first consider the results of the non parametric significance test -- the mann-whitney u test.
+          We showed here that the data from the samples were very unlikely to come from the same population, based on the p-value and significance threshold.
+            This along with the higher median, mean and inter quartile range comparisons suggested that rainy day ridership is higher.<br>
           After proceeding to the least squares regression model, we get the following coefficients of the variables representing precipitation, rain, and mean precipitation.
           <ul>
             <li>
@@ -237,10 +235,11 @@
               Mean precipitation (meanprecipi): 8659.9360
             </li>
           </ul>
-          This data can be misleading because it is unclear whether rain and precipitation actually increase ridership. From these coefficients
+          This data can be misleading because it is unclear whether rain and precipitation actually increase ridership. It appears that mean daily precipitation
+          carries the most weight and, in a way could outweigh the negative factors of rain and precipitation. From these coefficients
           we could conclude that higher daily mean precipitation increases ridership, but then we are left wondering: why does rain have a negative weight?
-          I was suspicious that the precipitation and mean precipitation (and other environmental variables) were having an effect on this. After removing all weather
-          variables except rain, the coefficient for rain was 111.85, which supports my initial conclusion: higher daily mean precipitation increases ridership, which implies that rainy days have increased ridership.
+          I was suspicious that the precipitation and mean precipitation (and other environmental variables) were having an effect on the 'rain' variable. After removing all weather
+          variables except rain, the coefficient for rain was 111.85, which supports my initial conclusion: higher daily mean precipitation increases ridership, which implies that rainy days increase ridership.
         </p>
       <h2>
       Reflection
