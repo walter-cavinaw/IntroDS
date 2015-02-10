@@ -85,8 +85,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6069364" vertical-offset="3952" max-vertical-offset="4488">
-              <caret line="251" column="71" selection-start-line="251" selection-start-column="71" selection-end-line="251" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.4258189" vertical-offset="459" max-vertical-offset="4488">
+              <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -602,7 +602,11 @@
       <created>1423542805498</created>
       <updated>1423542805498</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="spelling">
+      <created>1423542948451</created>
+      <updated>1423542948451</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1112,8 +1116,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6069364" vertical-offset="3952" max-vertical-offset="4488">
-          <caret line="251" column="71" selection-start-line="251" selection-start-column="71" selection-end-line="251" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.4258189" vertical-offset="459" max-vertical-offset="4488">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
           <folding />
         </state>
       </provider>
